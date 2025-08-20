@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Douce France - Sabores con Tradición</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-bread-slice logo-icon"></i>
+                <h1>Douce France</h1>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h2>Panadería con tradición artesanal</h2>
+            <p>Descubre el auténtico sabor del pan recién horneado, elaborado con ingredientes de la más alta calidad y
+                técnicas centenarias.</p>
+            <a href="#productos" class="btn">Nuestros Productos</a>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre Nosotros</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Más de 50 años horneando tradición</h3>
+                    <p>En Panadería Douce France, hemos mantenido viva la tradición panadera desde 1970. Nuestros
+                        maestros panaderos utilizan técnicas artesanales transmitidas de generación en generación,
+                        combinándolas con ingredientes de la más alta calidad.</p>
+                    <p>Cada día, amasamos con pasión y horneamos con dedicación para brindarte los sabores auténticos
+                        que han definido nuestra panadería durante décadas.</p>
+                    <p>Nuestro compromiso es ofrecer productos frescos, sabrosos y saludables que deleiten tus sentidos
+                        y se conviertan en parte de tus momentos especiales.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b"
+                        alt="Interior de nuestra panadería">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Productos -->
+    <section class="products" id="productos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Productos</h2>
+                <p>Descubre nuestra exquisita selección de panes y dulces artesanales</p>
+            </div>
+
+            <div class="category-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="pan">Panes</button>
+                <button class="filter-btn" data-filter="dulce">Dulces</button>
+                <button class="filter-btn" data-filter="especial">Especiales</button>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-category="pan">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73" alt="Pan artesanal">
+
+                    </div>
+                    <div class="product-info">
+                        <div class="product-badge">Nuevo</div>
+                        <h3>Pan Artesanal</h3>
+                        <p>Elaborado con masa madre y horneado en piedra para una corteza crujiente y miga esponjosa.
+                        </p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(28)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$4.50</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="dulce">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1675998643404-082cd06a792d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pastelería fina">
+
+                    </div>
+                    <div class="product-info">
+
+                        <h3>Croissant de Mantequilla</h3>
+                        <p>Hojaldre dorado y crujiente, elaborado con mantequilla pura para un sabor delicado y
+                            auténtico.</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(42)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$6.90</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pan">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1676294559428-ee947c85c04d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bollería">
+
+                    </div>
+                    <div class="product-info">
+                        <h3>Pan de Chocolate</h3>
+                        <p>Delicioso pan suave relleno de trozos de chocolate, ideal para acompañar el café o la
+                            merienda.</p>
+
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(35)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$3.20</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="especial">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1574085733277-851d9d856a3a" alt="Pan sin gluten">
+                        <div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+
+                        <h3>Bizcocho de Chocolate</h3>
+                        <p>Esponjoso y aromático, preparado con esencia natural de chocolate y un toque casero
+                            irresistible.</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(19)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">$5.80</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección Servicios Mejorada -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+                <p>Ofrecemos soluciones integrales para satisfacer todas tus necesidades panaderas</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Pasteles para Eventos</h3>
+                    <p>Creamos pasteles personalizados para bodas, cumpleaños y celebraciones especiales.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Diseños personalizados</li>
+                        <li><i class="fas fa-check"></i> Sabores exclusivos</li>
+                        <li><i class="fas fa-check"></i> Entrega puntual</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Entrega a Domicilio</h3>
+                    <p>Disfruta de nuestros productos frescos en la comodidad de tu hogar con nuestro servicio de
+                        delivery.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Envío en 30-45 min</li>
+                        <li><i class="fas fa-check"></i> Zona de cobertura amplia</li>
+                        <li><i class="fas fa-check"></i> Empaque especial</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Catering para Empresas</h3>
+                    <p>Ofrecemos servicios de catering para empresas con una amplia variedad de productos.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Desayunos ejecutivos</li>
+                        <li><i class="fas fa-check"></i> Coffee breaks</li>
+                        <li><i class="fas fa-check"></i> Eventos corporativos</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
+                </div>
+            </div>
+
+            <div class="services-cta">
+                <div class="cta-content">
+                    <h3>¿Necesitas un servicio personalizado?</h3>
+                    <p>Contáctanos y crearemos una solución a medida para tu evento o negocio</p>
+                </div>
+                <a href="#contacto" class="btn">Solicitar información</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lo que Dicen Nuestros Clientes</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <p class="testimonial-text">El mejor pan que he probado en la ciudad. Desde que descubrí Douce
+                        France, no compro en otro lugar. Su pan de masa madre es simplemente increíble.</p>
+                    <span class="testimonial-author">- Carlos Mendoza</span>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">Encargamos la tarta de nuestra boda y fue el centro de atención. No solo
+                        era preciosa, sino que estaba deliciosa. ¡Gracias por hacer nuestro día aún más especial!</p>
+                    <span class="testimonial-author">- Ana y Javier</span>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">Como celíaca, siempre es difícil encontrar pan de calidad. Los productos
+                        sin gluten de Douce France son excepcionales, ¡por fin puedo disfrutar de un buen pan!</p>
+                    <span class="testimonial-author">- Marta López</span>
+                </div>
+                <div class="testimonial-nav">
+                    <span class="testimonial-dot active" data-index="0"></span>
+                    <span class="testimonial-dot" data-index="1"></span>
+                    <span class="testimonial-dot" data-index="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contacto</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Ven a Visitarnos</h3>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <p>Av. de la Panadería, 123, 28012 Madrid</p>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <p>+34 91 123 45 67</p>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <p>info@doucefrance.com</p>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <p>Lunes a Sábado: 7:00 - 21:00<br>Domingos: 8:00 - 15:00</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>Douce France</h4>
+                    <p>Panadería artesanal con más de 50 años de tradición, ofreciendo los mejores productos horneados
+                        con ingredientes de calidad y técnicas tradicionales.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Horario</h4>
+                    <p>Lunes a Sábado: 7:00 - 21:00</p>
+                    <p>Domingos: 8:00 - 15:00</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Douce France. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
