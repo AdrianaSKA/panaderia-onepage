@@ -1,6 +1,6 @@
-// Esperar a que el DOM esté completamente cargado
+
 document.addEventListener('DOMContentLoaded', function () {
-    // Variables globales
+
     const header = document.querySelector('header');
     const backToTopBtn = document.getElementById('backToTop');
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
@@ -11,27 +11,24 @@ document.addEventListener('DOMContentLoaded', function () {
     let testimonialIndex = 0;
     let testimonialInterval;
 
-    // Función para manejar el scroll
+
     function handleScroll() {
-        // Header con efecto al hacer scroll
+
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
 
-        // Botón "volver arriba"
         if (window.scrollY > 500) {
             backToTopBtn.classList.add('visible');
         } else {
             backToTopBtn.classList.remove('visible');
         }
 
-        // Animación de elementos al hacer scroll
         animateOnScroll();
     }
 
-    // Función para animar elementos al hacer scroll
     function animateOnScroll() {
         const elements = document.querySelectorAll('.product-card, .service-card, .about-image');
 
@@ -46,11 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Función para el menú móvil
+
     function toggleMobileMenu() {
         mainNav.classList.toggle('active');
 
-        // Cambiar icono del botón
+
         const icon = mobileMenuBtn.querySelector('i');
         if (mainNav.classList.contains('active')) {
             icon.classList.remove('fa-bars');
@@ -61,26 +58,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Función para el slider de testimonios
     function showTestimonial(index) {
-        // Ocultar todos los testimonios
+
         testimonialSlides.forEach(slide => {
             slide.classList.remove('active');
         });
 
-        // Remover clase active de todos los dots
         testimonialDots.forEach(dot => {
             dot.classList.remove('active');
         });
 
-        // Mostrar testimonio seleccionado
         testimonialSlides[index].classList.add('active');
         testimonialDots[index].classList.add('active');
 
         testimonialIndex = index;
     }
 
-    // Función para avanzar automáticamente los testimonios
+
     function startTestimonialSlider() {
         testimonialInterval = setInterval(() => {
             testimonialIndex = (testimonialIndex + 1) % testimonialSlides.length;
@@ -88,17 +82,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 5000);
     }
 
-    // Función para manejar el envío del formulario
+
     function handleFormSubmit(e) {
         e.preventDefault();
 
-        // Aquí iría la lógica para enviar el formulario
-        // Por ahora, solo mostraremos una alerta
         alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
         contactForm.reset();
     }
 
-    // Función para navegación suave
     function smoothScroll(target) {
         const element = document.querySelector(target);
         if (element) {
@@ -109,7 +100,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Inicializar animaciones de elementos
     function initAnimations() {
         const elements = document.querySelectorAll('.product-card, .service-card, .about-image');
 
@@ -251,12 +241,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.body.appendChild(modal);
 
-        // Mostrar modal
+
         setTimeout(() => {
             modal.classList.add('active');
         }, 10);
 
-        // Cerrar modal
         const closeButton = modal.querySelector('.close-modal');
         closeButton.addEventListener('click', () => {
             modal.classList.remove('active');
@@ -266,24 +255,23 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Función para añadir al carrito
     function addToCart(productId) {
-        // Animación de añadido al carrito
+
         const button = document.querySelector(`.add-to-cart-btn[data-product="${productId}"]`);
         button.innerHTML = '<i class="fas fa-check"></i>';
         button.style.background = '#2ecc71';
 
-        // Restaurar después de 1.5 segundos
+
         setTimeout(() => {
             button.innerHTML = '<i class="fas fa-shopping-cart"></i>';
             button.style.background = '';
         }, 1500);
 
-        // En una implementación real, aquí añadirías el producto al carrito
+
         console.log('Producto añadido al carrito:', productId);
     }
 
-    // Inicializar las nuevas funcionalidades en la función init()
+
     function init() {
         setupEventListeners();
         initAnimations();
@@ -294,12 +282,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 
-
-    // Iniciar
     init();
-
-
-
 
 
 });
